@@ -14,15 +14,10 @@
     <!-- Adding "maximum-scale=1" fixes the Mobile Safari auto-zoom bug: http://filamentgroup.com/examples/iosScaleBug/ -->
 
     <!-- JS -->
-    <script src="js/jquery-1.10.1.min.js"></script>
+    <script src="js/jquery-1.6.4.min.js"></script>
     <script src="js/css3-mediaqueries.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/tabs.js"></script>
-
-    <!-- Tweet -->
-    <link rel="stylesheet" href="css/jquery.tweet.css" media="all" />
-    <script src="js/tweet/jquery.tweet.js"></script>
-    <!-- ENDS Tweet -->
 
     <!-- superfish -->
     <link rel="stylesheet" media="screen" href="css/superfish.css" />
@@ -32,8 +27,8 @@
     <!-- ENDS superfish -->
 
     <!-- prettyPhoto -->
-    <script src="js/prettyPhoto/js/jquery.prettyPhoto.js"></script>
     <link rel="stylesheet" href="js/prettyPhoto/css/prettyPhoto.css" media="screen" />
+    <script src="js/prettyPhoto/js/jquery.prettyPhoto.js"></script>
     <!-- ENDS prettyPhoto -->
 
     <!-- poshytip -->
@@ -41,9 +36,6 @@
     <link rel="stylesheet" href="js/poshytip-1.1/src/tip-yellowsimple/tip-yellowsimple.css" />
     <script src="js/poshytip-1.1/src/jquery.poshytip.min.js"></script>
     <!-- ENDS poshytip -->
-
-    <!-- GOOGLE FONTS -->
-    <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,300' rel='stylesheet' type='text/css'>
 
     <!-- Flex Slider -->
     <link rel="stylesheet" href="css/flexslider.css">
@@ -60,6 +52,9 @@
     <link rel="stylesheet" media="all" href="css/skin.css" />
     <link rel="stylesheet" media="all" href="css/style.css" />
     <link rel="stylesheet" media="all" href="css/code.css" />
+
+    <!-- GOOGLE FONTS -->
+    <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,300' rel='stylesheet' type='text/css'>
 
     <!-- reply move form -->
     <script src="js/moveform.js"></script>
@@ -132,8 +127,8 @@
         </div>
 
         <div class="wrapper">
-            <div id="logo">
-                <a href="index.html" id="name"><h1>Rovio Project</h1></a>
+            <div id="logo" class="clearfix">
+                <a href="index.html" id="name"><h1>Yuanbo She</h1></a>
                 <a href="http://blog.exbot.net"><img src="img/logo.png" alt="ExBot's Blog"></a>
             </div>
 
@@ -166,7 +161,7 @@
     
     <h2 class="page-heading"><span>Article</span></h2>
 <article class="format-standard">
-    <h2 class="post-heading"><a href="/rovio/blog/2013/06/RovioAPIforROSGroovy.html">WowWee Rovio API for ROS Groovy</a></h2>
+    <h2 class="post-heading"><a href="blog/2013/06/rovio_base_for_ros_groovy.html">WowWee Rovio API for ROS Groovy</a></h2>
     <div class="post-content">
         <p>玩WowWee Rovio小车有段时间了，整理了一下之前写的代码，在ROS Groovy里面，对WowWee Rovio的CGI接口进行了封装，这次封装的主要是控制接口（三个全向轮，摄像头），图像接口（为了节约流量没有采取视频流的方式获取图像，而是采用request来response实时图像），MCU Report接口（包含红外传感，编码盘信息，电池信息等）。</p>
 
@@ -497,6 +492,11 @@ $ rosrun rovio_test rovioTest  </p>
 
 <!-- UY BEGIN -->
 <div id="uyan_frame"></div>
+<script type="text/javascript">
+var uyan_config = {
+     'su': "/blog/2013/06/rovio_base_for_ros_groovy/";
+};
+</script>
 <script type="text/javascript" id="UYScript" src="http://v1.uyan.cc/js/iframe.js?UYUserId=1804015" async=""></script>
 <!-- UY END -->
 
