@@ -757,10 +757,10 @@ nav a{
 
 #posts-list .feature-image,
 #post-content .feature-image{
-	width: 540px;
-	margin-bottom: 21px;
+	float: left;
+	width: 180px;
+	margin: 0 10px 5px 0;
 	line-height: 0em;
-	
 	-webkit-box-shadow: 2px 2px 0px rgba(0,0,0,.2);
 	-moz-box-shadow: 2px 2px 0px rgba(0,0,0,.2);
 	-o-box-shadow: 2px 2px 0px rgba(0,0,0,.2);
@@ -786,7 +786,7 @@ nav a{
 }
 
 article .post-heading a {
-	font-size: 150%;
+	font-size: 120%;
 	text-shadow: rgba(135,145,135,0.65) 3px 3px 3px;
 }
 
@@ -835,6 +835,7 @@ article .meta .author{
 	margin-bottom: 50px;	
 }
 
+.post-content a{ color: blue; }
 /* PAGE NAVIGATION ------------------------------------------------------------*/
 
 .page-navigation{
